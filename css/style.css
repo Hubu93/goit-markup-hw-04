@@ -120,6 +120,12 @@ body {
   color: var(--accent-hover-color);
 }
 
+.mail-link::before {
+  content: '';
+  height: 30px;
+  width: 30px;
+}
+
 .header-contact {
   margin-left: auto;
 }
@@ -177,6 +183,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .priorities-list {
@@ -189,6 +196,22 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 120px) / 4);
+}
+
+.priorities-list-item-block {
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.priorities-list-item-block-icon {
+  width: 70px;
+  height: 70px;
+  display: block;
 }
 
 .priorities-title-description {
