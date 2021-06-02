@@ -56,9 +56,9 @@ img {
   background-color: #2196f3;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill;
+.social-list-link:hover .social-list-icon use,
+.social-list-link:focus .social-list-icon use {
+  fill: #fff;
 }
 
 .social-list-icon {
@@ -178,6 +178,8 @@ body {
   padding-bottom: 210px;
   max-width: 1600px;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
