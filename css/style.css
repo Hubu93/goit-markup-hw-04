@@ -266,6 +266,10 @@ body {
   color: var(--description-color);
 }
 
+.priorities-work {
+  padding: 0 0 94pxx 0;
+}
+
 .priorities-work-title {
   text-align: center;
   font-size: 36px;
@@ -334,6 +338,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  color: var(--description-color);
 }
 
 .footer {
