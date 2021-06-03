@@ -461,10 +461,6 @@ body {
   padding: 20px 24px 20px 24px;
 }
 
-.portfolio-listwork-list-link {
-  color: var(--main-color-font);
-}
-
 .portfolio-listwork-list-link-title {
   font-size: 18px;
   line-height: 2;
@@ -485,6 +481,22 @@ body {
   font-size: 36px;
   text-align: center;
   line-height: 1.17;
+}
+
+.clients-list-item-link {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: block;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list-item {
+  display: flex;
 }
 /*  для удобства понимания цвета добавил черный */
 .footer {
