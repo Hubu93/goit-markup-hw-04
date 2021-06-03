@@ -56,8 +56,13 @@ img {
   background-color: #2196f3;
 }
 
-.social-list-link:hover .social-list-icon use,
-.social-list-link:focus .social-list-icon use {
+.social-list-link .social-list-icon,
+.social-list-link .social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: #fff;
 }
 
@@ -469,6 +474,12 @@ body {
   color: var(--description-color);
   margin-top: 4px;
   text-align: left;
+}
+
+.clients-title {
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.17;
 }
 /*  для удобства понимания цвета добавил черный */
 .footer {
