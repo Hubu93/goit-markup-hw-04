@@ -155,19 +155,35 @@ body {
   color: var(--accent-hover-color);
 }
 
-.mail-icon::before {
+.header-mail-icon-send {
+  fill: background: #757575;;
+  width: 16px;
+  height: 12px;
   display: inline-block;
-  content: '';
-  background: url('../images/svg/symbol-defs.svg#icon-antenna');
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  color: #757575;
-  flex-shrink: 2;
+}
+
+.header-mail-icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  display: inline-block;
+}
+.header-contact-item:hover .header-mail-icon-send,
+.header-contact-item:hover .header-mail-icon-phone {
+  fill: #2196F3;;
+}
+
+.header-mail-icon-send, .header-mail-icon-phone {
+  margin-right: 10px;
 }
 
 .header-contact {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-contact-item {
   display: flex;
   align-items: center;
 }
@@ -346,6 +362,14 @@ body {
   padding: 60px 0 60px 0;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-container-left {
+  margin-right: 70px;
+}
+
 .footer-logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -521,4 +545,25 @@ body {
 .footer {
   background-color: #2f303a;
 }
+
+.footer-container-right {
+  padding: 10px 0 40px 0;
+}
+
+.footer-container-righ-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: #FFFFFF;
+}
+
+.footer-social-list-item {
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /*  для удобства понимания цвета добавил черный*/
