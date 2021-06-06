@@ -151,12 +151,13 @@ body {
 .tell-link:hover,
 .tell-link:focus,
 .mail-link:hover,
-.mail-link:focus {
+.mail-link:focus 
+ {
   color: var(--accent-hover-color);
 }
 
 .header-mail-icon-send {
-  fill: background: #757575;;
+  fill: background: #757575;; 
   width: 16px;
   height: 12px;
   display: inline-block;
@@ -168,8 +169,16 @@ body {
   fill: #757575;
   display: inline-block;
 }
+
+.header-mail-abzac {
+  display: inline-block;
+}
+
+
 .header-contact-item:hover .header-mail-icon-send,
-.header-contact-item:hover .header-mail-icon-phone {
+.header-contact-item:hover .header-mail-icon-phone,
+.header-contact-item:focus .header-mail-icon-send,
+.header-contact-item:focus .header-mail-icon-phone {
   fill: #2196F3;;
 }
 
@@ -183,7 +192,7 @@ body {
   align-items: center;
 }
 
-.header-contact-item {
+.mail-link, .tell-link {
   display: flex;
   align-items: center;
 }
@@ -236,6 +245,14 @@ body {
 
 .section {
   padding: 94px 0 94px 0;
+}
+
+.work-section {
+  padding: 15px 0 15px 0;
+}
+
+.team-section {
+padding: 70px 0 90px 0;
 }
 
 .priorities-title {
@@ -298,12 +315,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-right: -30px;
   margin-left: -30px;
 }
 
 .priorities-work-list-item {
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
@@ -474,6 +489,10 @@ body {
   flex-basis: calc((100% - 90px) / 3);
 }
 
+.portfolio-listwork-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-listwork-list-link-img {
   display: block;
 }
@@ -524,11 +543,11 @@ body {
   fill: #afb1b8;
 }
 
-.clients-list-item-link:hover {
+.clients-list-item-link:hover,  .clients-list-item-link:focus {
   border: 1px solid #2196f3;
   cursor: pointer;
 }
-.clients-list-item-link:hover .clients-list-item-icon {
+.clients-list-item-link:hover .clients-list-item-icon, .clients-list-item-link:focus .clients-list-item-icon {
   fill: #2196f3;
 }
 
@@ -564,6 +583,10 @@ background: rgba(255, 255, 255, 0.1);
 
 .footer-social-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-list-link .social-list-icon {
+  fill:#FFFFFF;
 }
 
 /*  для удобства понимания цвета добавил черный*/
