@@ -175,10 +175,10 @@ body {
 }
 
 
-.header-contact-item:hover .header-mail-icon-send,
-.header-contact-item:hover .header-mail-icon-phone,
-.header-contact-item:focus .header-mail-icon-send,
-.header-contact-item:focus .header-mail-icon-phone {
+.mail-link:hover .header-mail-icon-send,
+.mail-link:focus .header-mail-icon-send,
+.tell-link:hover .header-mail-icon-phone,
+.tell-link:focus .header-mail-icon-phone {
   fill: #2196F3;;
 }
 
