@@ -351,6 +351,42 @@ padding: 70px 0 90px 0;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
+    
+}
+
+.portfolio-listwork-list {
+position: relative;
+overflow: hidden;
+}
+
+.portfolio-listwork-list-link {
+  text-decoration: none;
+  color: #212121;
+}
+
+.portfolio-list-img-wrapper {
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  color: #FFFFFF;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.55;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
+.portfolio-listwork-list-link:hover .overlay,
+.portfolio-listwork-list-link:focus .overlay {
+  transform: translateY(0%);
 }
 
 .team-list-item-convert {
